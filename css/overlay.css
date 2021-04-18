@@ -1,0 +1,89 @@
+.overlay {
+    font-family: "Avenir LT Pro", sans-serif;
+    width: 0;
+    padding-bottom: 10px;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    background: linear-gradient(to top, #2c2f42, #161824);
+    height: 100vh;
+    overflow-x: hidden;
+    transition: width 0.5s ease 0s;
+  }
+  .overlay-content a {
+    font-weight: 700;
+    color: #edf0f1;
+    text-decoration: none;
+  }
+  .overlay-active {
+    width: 100%;
+  }
+  .overlay-content {
+    display: block;
+    justify-content: center;
+    padding-bottom: 30%;
+  }
+  .overlay nav {
+    padding: 15px;
+  }
+  /* Overlay */
+  .options-overlay {
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+    display: flex;
+  }
+  .options-overlay p {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+  }
+  .options-overlay i {
+    color: black;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background: white;
+  }
+  .options-overlay .omitir {
+    font-weight: 400;
+  }
+  .perfiles-section {
+    margin-left: 10px;
+  }
+  .perfiles-section p {
+    white-space: nowrap;
+    padding: 10px;
+    color: white;
+  }
+  .si-perfil {
+    display: flex;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow: scroll hidden;
+    scroll-padding: 0px 1.25rem;
+    scrollbar-width: none;
+  }
+  .si-perfil::-webkit-scrollbar {
+    display: none;
+  }
+  .si-perfil img {
+    padding: 0px 5px 0px 5px;
+    border-radius: 50px;
+    width: 100px;
+  }
+  @media screen and (min-width: 300px) {
+    .overlay {
+      display: initial;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .overlay {
+      display: none;
+    }
+  }

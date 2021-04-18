@@ -1,0 +1,84 @@
+/* Arrows */
+.responsive .slick-prev {
+  left: -200px;
+  z-index: 1;
+  padding: 60px 200px 60px 20px;
+  border: 1px solid red;
+  opacity: 0;
+}
+.responsive .slick-next {
+  right: -200px;
+  z-index: 1;
+  padding: 60px 200px 60px 20px;
+  border: 1px solid red;
+  opacity: 0;
+}
+/* .slick-prev:hover {
+  color: transparent;
+  outline: 0;
+  background: 0 0;
+  opacity: 1;
+}
+.slick-next:hover {
+  color: transparent;
+  outline: 0;
+  background: 0 0;
+  opacity: 1;
+} */
+
+/* Slick Center */
+.cl img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: rgb(0 0 0) 0px 16px 10px -10px;
+}
+
+.cl {
+  padding: 5px;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .cl {
+    padding: 10px;
+  }
+}
+/* Dots Slider */
+.slick-dots li button:before {
+  color: #969eab;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  content: "•";
+  width: 20px;
+  height: 20px;
+  font-size: 10px;
+  line-height: 20px;
+  position: absolute;
+  text-align: center;
+}
+.slick-dots li.slick-active button:before {
+  color: #f9f9f9;
+}
+.slick-dots {
+  display: block;
+  list-style: none;
+  position: absolute;
+  text-align: center;
+  bottom: 0px;
+  margin: 0;
+  padding: 20px;
+  right: 8px;
+  width: 100%;
+}
+
+.slick-slide[aria-hidden=true]  .card:before{
+    content: "";
+    background: linear-gradient(#1b1d24,#1e1f2a) 0 0/cover;
+    width: 100%;
+    display: block;
+    position: absolute;
+    opacity: .5;
+    border-radius: 4px;
+    z-index: 2;
+}

@@ -1,0 +1,76 @@
+.footer {
+  z-index: 3;
+  position: sticky;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 1em;
+  background: black;
+}
+.list-icons {
+  display: grid;
+  grid-auto-flow: column;
+  list-style: none;
+  padding-bottom: 1em;
+}
+.list-icons svg {
+  fill: rgba(255, 255, 255, 0.6);
+}
+.list-icons svg:hover {
+  fill: rgb(255, 255, 255);
+}
+.icon-user img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  overflow: hidden;
+}
+.list-item {
+  text-align: center;
+}
+.list-item svg {
+  display: block;
+  margin: auto;
+}
+/* Credits */
+.credits {
+  font-family: system-ui;
+  background: #212429;
+  font-size: 11px;
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+}
+.credits a {
+  color: red;
+  text-decoration: none;
+}
+/* Lineas */
+.lines{
+  padding: 15px 0px 0px 0px;
+}
+.lines span{
+  display: block;
+  width: 30vw;
+  margin: 0 auto;
+  padding: 3px;
+  border-radius: 10px;
+  background: white;
+}
+
+@media screen and (min-width: 300px) {
+  .footer {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer {
+    display: none;
+  }
+}

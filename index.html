@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CDN Slick Slider -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css'>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/overlay.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/disney.css">
+    <link rel="stylesheet" href="css/film.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="shortcut icon" href="img/icons/logo.svg" type="image/x-icon">
+    <title>Disney Plus</title>
+</head>
+<body>
+    <!-- Overlay / Add Script Js: Add and Remove-->
+    <div class="overlay">
+        <div class="overlay-content">
+            <nav class="options-overlay">
+                <a href="#" class="close">
+                    <i class="fal fa-angle-left"></i>
+                </a>
+                <p>Elegir icono</p>
+                <a class="omitir" href="#">Omitir</a>
+            </nav>
+            <div class="perfiles-section">
+                <!-- Container Disney-->
+                <p>Destacados</p>
+                <ul class="si-perfil perfil-item" id="scroll">
+                    <li >
+                        <a href="#"><img src="img/perfil/destacados/img1.png" onclick="changeimg('img/perfil/destacados/img1.png')" alt=""></a>
+                        <a href="#"><img src="img/perfil/destacados/img2.png" onclick="changeimg('img/perfil/destacados/img2.png')" alt=""></a>
+                        <a href="#"><img src="img/perfil/destacados/img3.png" onclick="changeimg('img/perfil/destacados/img3.png')" alt=""></a>
+                        <a href="#"><img src="img/perfil/destacados/img4.png" onclick="changeimg('img/perfil/destacados/img4.png')" alt=""></a>
+                        <a href="#"><img src="img/perfil/destacados/img5.png" onclick="changeimg('img/perfil/destacados/img5.png')" alt=""></a>
+                    </li>
+                </ul>
+                <p>Disney</p>
+                <ul class="si-perfil" id="scroll1">
+                    <li>
+                        <a href="#"><img src="img/perfil/disney/img1.png" onclick="changeimg('img/perfil/disney/img1.png')" alt=""></a>
+                        <a href="#"><img src="img/perfil/disney/img2.png" onclick="changeimg('img/perfil/disney/img2.png')" alt=""></a>
+                        <a href="#"><img src="img/perfil/disney/img3.png" onclick="changeimg('img/perfil/disney/img3.png')" alt=""></a>
+                        <a href="#"><img src="img/perfil/disney/img4.png" onclick="changeimg('img/perfil/disney/img4.png')" alt=""></a>
+                        <a href="#"><img src="img/perfil/disney/img5.png" onclick="changeimg('img/perfil/disney/img5.png')" alt=""></a>
+                    </li>
+                </ul>
+                <p>Marvel</p>
+                <ul class="si-perfil" id="scroll2">
+                    <li>
+                        <a href="#"><img src="img/perfil/marvel/img1.png" onclick="changeimg('img/perfil/marvel/img1.png')" alt=""></a>
+                        <a href="#"><img src="img/perfil/marvel/img2.png" onclick="changeimg('img/perfil/marvel/img2.png')" alt=""></a>
+                        <a href="#"><img src="img/perfil/marvel/img3.png" onclick="changeimg('img/perfil/marvel/img3.png')" alt=""></a>
+                        <a href="#"><img src="img/perfil/marvel/img4.png" onclick="changeimg('img/perfil/marvel/img4.png')" alt=""></a>
+                        <a href="#"><img src="img/perfil/marvel/img5.png" onclick="changeimg('img/perfil/marvel/img5.png')" alt=""></a>
+                    </li>
+                </ul>
+                <p>Pixar</p>
+                <ul class="si-perfil" id="scroll3">
+                    <li>
+                        <a href="#"><img src="img/perfil/starwars/img1.png" onclick="changeimg('img/perfil/starwars/img1.png')"alt=""></a>
+                        <a href="#"><img src="img/perfil/starwars/img2.png" onclick="changeimg('img/perfil/starwars/img2.png')"alt=""></a>
+                        <a href="#"><img src="img/perfil/starwars/img3.png" onclick="changeimg('img/perfil/starwars/img3.png')"alt=""></a>
+                        <a href="#"><img src="img/perfil/starwars/img4.png" onclick="changeimg('img/perfil/starwars/img4.png')"alt=""></a>
+                        <a href="#"><img src="img/perfil/starwars/img5.png" onclick="changeimg('img/perfil/starwars/img5.png')"alt=""></a>
+                    </li>
+                </ul>
+                <p>Star Wars</p>
+                <ul class="si-perfil" id="scroll4">
+                    <li>
+                        <a href="#"><img src="img/perfil/pixar/img1.png" onclick="changeimg('img/perfil/pixar/img1.png')" alt=""></a>
+                        <a href="#"><img src="img/perfil/pixar/img2.png" onclick="changeimg('img/perfil/pixar/img2.png')" alt=""></a>
+                        <a href="#"><img src="img/perfil/pixar/img3.png" onclick="changeimg('img/perfil/pixar/img3.png')" alt=""></a>
+                        <a href="#"><img src="img/perfil/pixar/img4.png" onclick="changeimg('img/perfil/pixar/img4.png')" alt=""></a>
+                        <a href="#"><img src="img/perfil/pixar/img5.png" onclick="changeimg('img/perfil/pixar/img5.png')" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Header -->
+    <header class="header">
+        <a href="#" class="logo"><img src="img/icons/logo.svg" alt=""></a>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="#">
+                            <span class="icons"><svg alt="home" viewBox="0 0 36 36" style="height: 24px; min-width: 24px; width: 24px; z-index: auto;"><path d="M26.882 19.414v10.454h-5.974v-5.227h-5.974v5.227H8.961V19.414H5.227L17.921 6.72l12.694 12.694h-3.733z"></path></svg></span>
+                            <p class="name-tag">inicio</p>
+                        </a>
+                    </li>
+                    <li><a href="#">
+                            <span class="icons"><svg alt="search" viewBox="0 0 36 36" style="height: 24px; min-width: 24px; width: 24px; z-index: auto;"><path d="M21.866 24.337c-3.933 2.762-9.398 2.386-12.914-1.13-3.936-3.936-3.936-10.318 0-14.255 3.937-3.936 10.32-3.936 14.256 0 3.327 3.327 3.842 8.402 1.545 12.27l4.56 4.558a2 2 0 0 1 0 2.829l-.174.173a2 2 0 0 1-2.828 0l-4.445-4.445zm-5.786-1.36a6.897 6.897 0 1 0 0-13.794 6.897 6.897 0 0 0 0 13.794z"></path></svg></span>
+                            <p class="name-tag">búsqueda</p>
+                        </a>
+                    </li>
+                    <li><a href="#">
+                            <span class="icons"><svg alt="plus" viewBox="0 0 36 36" style="height: 24px; min-width: 24px; width: 24px; z-index: auto;"><path d="M27.85 15.1H20.9V8.15a2.9 2.9 0 0 0-5.8 0v6.95H8.15a2.9 2.9 0 0 0 0 5.8h6.95v6.95a2.9 2.9 0 0 0 5.8 0V20.9h6.95a2.9 2.9 0 1 0 0-5.8z"></path></svg></span>
+                            <p class="name-tag">mi lista</p>
+                        </a>
+                    </li>
+                    <li class="hidden-p"><a href="#">
+                        <span class="icons"><svg alt="star" viewBox="0 0 36 36" style="height: 24px; min-width: 24px; width: 24px; z-index: auto;"><path d="M17.625 26.028L10.44 30l1.373-8.412L6 15.631l8.033-1.228 3.592-7.653 3.592 7.653 8.033 1.228-5.813 5.957L24.81 30z"></path></svg></span>
+                        <p class="name-tag">originales</p>
+                        </a>
+                    </li>
+                    <li class="hidden-p"><a href="#">
+                        <span class="icons"><svg alt="film" viewBox="0 0 36 36" style="height: 24px; min-width: 24px; width: 24px; z-index: auto;"><path d="M24.71 20.07a2.97 2.97 0 1 0-4.2-4.2 2.97 2.97 0 0 0 4.2 4.2m-12.262 0a2.97 2.97 0 1 0-4.2-4.2 2.97 2.97 0 0 0 4.2 4.2m6.173-10.31a2.969 2.969 0 1 0-4.199 4.198 2.969 2.969 0 0 0 4.199-4.198m0 12.262a2.969 2.969 0 1 0-4.199 4.198 2.969 2.969 0 0 0 4.199-4.198m-1.544-4.629a.846.846 0 1 0-1.197 1.196.846.846 0 0 0 1.197-1.196m18.06-.644c-3.33 6.913-8.165 9.928-11.635 11.24-2.57.971-4.762 1.178-5.949 1.208-.348.032-.698.053-1.052.053C10.287 29.25 5.25 24.213 5.25 18S10.287 6.75 16.5 6.75c6.214 0 11.25 5.037 11.25 11.25a11.19 11.19 0 0 1-2.493 7.054c2.832-1.612 5.844-4.382 8.138-9.143a.968.968 0 0 1 1.742.838"></path></svg></span>
+                        <p class="name-tag">películas</p>
+                        </a>
+                    </li>
+                    <li class="hidden-p"><a href="#">
+                        <span class="icons"><svg alt="serie" viewBox="0 0 36 36" style="height: 24px; min-width: 24px; width: 24px; z-index: auto;"><path d="M18.84 11.965h6.722a4 4 0 0 1 4 4V26a4 4 0 0 1-4 4H10.375a4 4 0 0 1-4-4V15.965a4 4 0 0 1 4-4h6.211l-3.981-3.981a1.162 1.162 0 1 1 1.643-1.644l3.465 3.465 3.464-3.465a1.162 1.162 0 0 1 1.644 1.644l-3.982 3.981zm6.428 7.73a1.718 1.718 0 1 0 0-3.436 1.718 1.718 0 0 0 0 3.436zm0 6.011a1.718 1.718 0 1 0 0-3.435 1.718 1.718 0 0 0 0 3.435z"></path></svg></span>
+                        <p class="name-tag">series</p>
+                        </a>
+                    </li>
+                    <li class="acort-menu">
+                        <a href="#">
+                            <span class="icons"><svg alt="acort" viewBox="0 0 36 36" style="height: 24px; min-width: 24px; width: 24px; z-index: auto;"><path d="M19.53 28.827h-2.933a1.048 1.048 0 0 1-1.048-1.047v-2.933c0-.579.47-1.048 1.048-1.048h2.933c.578 0 1.047.47 1.047 1.048v2.933c0 .578-.469 1.047-1.047 1.047zm0-8.799h-2.933a1.048 1.048 0 0 1-1.048-1.047v-2.933c0-.579.47-1.048 1.048-1.048h2.933c.578 0 1.047.469 1.047 1.048v2.933c0 .578-.469 1.047-1.047 1.047zm0-8.8h-2.933a1.048 1.048 0 0 1-1.048-1.047V7.248c0-.578.47-1.047 1.048-1.047h2.933c.578 0 1.047.469 1.047 1.047v2.933c0 .579-.469 1.048-1.047 1.048z"></path></svg></span>
+                        </a>
+                        <div class="acort-links">
+                            <a href="#">
+                                <span class="icons"><svg alt="star" viewBox="0 0 36 36" style="height: 24px; min-width: 24px; width: 24px; z-index: auto;"><path d="M17.625 26.028L10.44 30l1.373-8.412L6 15.631l8.033-1.228 3.592-7.653 3.592 7.653 8.033 1.228-5.813 5.957L24.81 30z"></path></svg></span>
+                                <p class="acort-name">originales</p>
+                            </a>
+                            <a href="#">
+                                <span class="icons"><svg alt="film" viewBox="0 0 36 36" style="height: 24px; min-width: 24px; width: 24px; z-index: auto;"><path d="M24.71 20.07a2.97 2.97 0 1 0-4.2-4.2 2.97 2.97 0 0 0 4.2 4.2m-12.262 0a2.97 2.97 0 1 0-4.2-4.2 2.97 2.97 0 0 0 4.2 4.2m6.173-10.31a2.969 2.969 0 1 0-4.199 4.198 2.969 2.969 0 0 0 4.199-4.198m0 12.262a2.969 2.969 0 1 0-4.199 4.198 2.969 2.969 0 0 0 4.199-4.198m-1.544-4.629a.846.846 0 1 0-1.197 1.196.846.846 0 0 0 1.197-1.196m18.06-.644c-3.33 6.913-8.165 9.928-11.635 11.24-2.57.971-4.762 1.178-5.949 1.208-.348.032-.698.053-1.052.053C10.287 29.25 5.25 24.213 5.25 18S10.287 6.75 16.5 6.75c6.214 0 11.25 5.037 11.25 11.25a11.19 11.19 0 0 1-2.493 7.054c2.832-1.612 5.844-4.382 8.138-9.143a.968.968 0 0 1 1.742.838"></path></svg></span>
+                                <p class="acort-name">películas</p>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        <!-- Profile -->
+        <div class="profile">
+            <div class="profile-selected">
+                <p class="name-user">Mi Perfil</p>
+                <img class="avatar img-user" src="img/icons/user.svg" alt="">
+            </div>
+            <!-- Profile-nav / Add Javacript - Change Img / Change Text -->
+            <nav class="profile-nav">
+                <ul class="profile-nav-profiles">
+                    <li>
+                        <img class="avatar" src="img/perfil/perfil1.png" onclick="changeimg('img/perfil/perfil1.png');changetext('Thanos')">
+                        <p>Thanos</p>
+                    </li>
+                    <li>
+                        <img class="avatar" src="img/perfil/perfil2.png" onclick="changeimg('img/perfil/perfil2.png');changetext('Ironman')">
+                        <p>Ironman</p>
+                    </li>
+                    <li>
+                        <img class="avatar" src="img/perfil/perfil3.png" onclick="changeimg('img/perfil/perfil3.png');changetext('Spiderman')">
+                        <p>Spiderman</p>
+                    </li>
+                    <li>
+                        <div class="plus-perfil">
+                            <svg viewBox="0 0 36 36" style="height: 24px; min-width: 24px; width: 24px; z-index: auto;"><path d="M16.469 17.219V5.5a1 1 0 0 1 1-1h.312a1 1 0 0 1 1 1v11.719H30.5a1 1 0 0 1 1 1v.312a1 1 0 0 1-1 1H18.781V31.25a1 1 0 0 1-1 1h-.312a1 1 0 0 1-1-1V19.531H4.75a1 1 0 0 1-1-1v-.312a1 1 0 0 1 1-1h11.719z"></path></svg>
+                        </div>
+                        <p>Crear Perfil:</p>
+                    </li>
+                </ul>
+                <!-- Usuario -->
+                <ul class="profile-nav-options">
+                    <li><a href="#"><p>Editar perfiles</p></a></li>
+                    <li><a href="#"><p>Ajustes de Aplicación</p></a></li>
+                    <li><a href="#"><p>Cuenta</p></a></li>
+                    <li><a href="#"><p>Ayuda</p></a></li>
+                    <li><a href="#"><p>Cerrar sesión</p></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Section Films -->
+    <div class="container-general">
+        <!-- Slider Films -->
+        <div class="slider-films">
+            <div class="slider center">       
+                <div class="slide">
+                <div class="cl">
+                    <img src="https://i.imgur.com/oOZB19w.jpg" alt="">
+                  </div></a>
+                </div>
+                <div class="slide">
+                  <div class="cl">
+                    <img src="https://i.imgur.com/r76kHRX.jpg" alt="">
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="cl">
+                    <img src="https://i.imgur.com/HzFeR7t.jpg" alt="">
+                  </div>
+                </div>
+              <div class="slide">
+                  <div class="cl">
+                    <img src="https://i.imgur.com/TNP3OUM.jpg" alt=""></h3>
+                  </div>
+                </div>  
+            </div>
+        </div>
+        <!-- Container Disney-->
+        <div class="main disney-rows">
+          <div class="grid">
+            <div class="card-disney">
+              <div class="item-border">
+                <img src="img/disney/disney-txt.png" class="item-image">
+                <img src="img/disney/disney.gif" class="item-image hover-image">
+              </div>
+            </div>
+            <div class="card-disney">
+              <div class="item-border">
+                <img src="img/disney/pixar-txt.png" class="item-image">
+                <img src="img/disney/pixar.gif" class="item-image hover-image">
+              </div>
+            </div>
+            <div class="card-disney">
+              <div class="item-border">
+                <img src="img/disney/marvel-txt.png" class="item-image">
+                <img src="img/disney/marvel.gif" class="item-image hover-image">
+              </div>
+            </div>
+            <div class="card-disney">
+              <div class="item-border">
+                <img src="img/disney/star-txt.png" class="item-image">
+                <img src="img/disney/starwars.gif" class="item-image hover-image">
+              </div>
+            </div>
+            <div class="card-disney">
+              <div class="item-border">
+                <img src="img/disney/national-txt.png" class="item-image">
+                <img src="img/disney/national.gif" class="item-image hover-image">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Films -->
+        <div class="main movies-rows">
+            <h3 class="list-title">Recomendaciones Para ti</h3>
+            <div class="slider responsive">
+              <div class="card"><h3><img src="img/portadas/recommed/img1.jpg"></h3></div>
+              <div class="card"><h3><img src="img/portadas/recommed/img2.jpg"></h3></div>
+              <div class="card"><h3><img src="img/portadas/recommed/img3.jpg"></h3></div>
+              <div class="card"><h3><img src="img/portadas/recommed/img4.jpg"></h3></div>
+              <div class="card"><h3><img src="img/portadas/recommed/img5.jpg"></h3></div>
+              <div class="card"><h3><img src="img/portadas/recommed/img6.jpg"></h3></div>
+            </div>
+            <h3 class="list-title">Universo Cinematográfico de Marvel</h3>
+            <div class="slider responsive">
+     
+              <div class="card"><h3><img src="img/portadas/marvel/img1.jpg"></h3></div>
+              <div class="card"><h3><img src="img/portadas/marvel/img2.jpg"></h3></div>
+              <div class="card"><h3><img src="img/portadas/marvel/img3.jpg"></h3></div>
+              <div class="card"><h3><img src="img/portadas/marvel/img4.jpg"></h3></div>
+              <div class="card"><h3><img src="img/portadas/marvel/img5.jpg"></h3></div>
+              <div class="card"><h3><img src="img/portadas/marvel/img6.jpg"></h3></div>
+            </div>
+            <h3 class="list-title">Universo de los Xmen</h3>
+            <div class="slider responsive">
+              <div class="card"><h3><img src="img/portadas/xmen/img1.jpg"></h3></div>
+              <div class="card"><h3><img src="img/portadas/xmen/img2.jpg"></h3></div>
+              <div class="card"><h3><img src="img/portadas/xmen/img3.jpg"></h3></div>
+              <div class="card"><h3><img src="img/portadas/xmen/img4.jpg"></h3></div>
+              <div class="card"><h3><img src="img/portadas/xmen/img6.jpg"></h3></div>
+              <div class="card"><h3><img src="img/portadas/xmen/img7.jpg"></h3></div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+          <ul class="list-icons">
+              <li class="list-item">
+                  <a href="#">
+                      <span><svg alt="home" viewBox="0 0 36 36" style="height: 24px; min-width: 24px; width: 24px; z-index: auto;"><path d="M26.882 19.414v10.454h-5.974v-5.227h-5.974v5.227H8.961V19.414H5.227L17.921 6.72l12.694 12.694h-3.733z"></path></svg></span>
+                  </a>
+              </li>
+              <li class="list-item">
+                  <a href="#">
+                      <span><svg alt="search" viewBox="0 0 36 36" style="height: 24px; min-width: 24px; width: 24px; z-index: auto;"><path d="M21.866 24.337c-3.933 2.762-9.398 2.386-12.914-1.13-3.936-3.936-3.936-10.318 0-14.255 3.937-3.936 10.32-3.936 14.256 0 3.327 3.327 3.842 8.402 1.545 12.27l4.56 4.558a2 2 0 0 1 0 2.829l-.174.173a2 2 0 0 1-2.828 0l-4.445-4.445zm-5.786-1.36a6.897 6.897 0 1 0 0-13.794 6.897 6.897 0 0 0 0 13.794z"></path></svg></span>
+                  </a>
+              </li>
+              <li class="list-item">
+                  <a href="#">
+                      <span><svg alt="download" viewBox="0 0 24 22" style="height: 24px; min-width: 24px; width: 24px; z-index: auto;"> <path d="M11 2C10.448 2 10 2.448 10 3V11H6L12 17L18 11H14V3C14 2.448 13.552 2 13 2H11ZM2 20V22H22V20H2Z"></path></svg></span>
+                  </a>
+              </li>
+              <li class="list-item">
+                  <a href="#" class="icon-user">
+                      <img src="img/icons/user.svg" class="color-img img-user-perfil" alt="">
+                  </a>
+              </li>
+          </ul>
+          <div class="lines">
+              <span></span>
+          </div>
+          <div class="credits">Creado por:
+              <a href="https://diegobazan.com/" target="_blank">Diego Bazan</a>
+          </div>
+    </footer>
+</body>
+<!-- Scripts Slider JS -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js'></script>
+<script src="js/script.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/slider.js"></script>
+</html>

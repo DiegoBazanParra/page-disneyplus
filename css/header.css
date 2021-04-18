@@ -1,0 +1,270 @@
+@import url(font.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Avenir LT Pro', sans-serif;  
+  background: radial-gradient(#2c2f42, #161824);
+  height: 100vh;
+}
+a {
+  text-decoration: none;
+}
+.logo img {
+  height: 40px;
+  margin-right: 30px;
+}
+.name-tag {
+  margin-left: 10px;
+}
+/* Elements SVG */
+.header svg {
+  fill: white;
+}
+.options-overlay a span svg {
+  width: 20px !important;
+  height: 20px !important;
+}
+/* ------------------------------------------------------------------------------------------------------------- */
+/* Header */
+.header {
+  display: flex;
+  padding: 20px 35px;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  background: black;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.nav-links li {
+  list-style: none;
+}
+.nav-links {
+  flex-grow: 1;
+  overflow: hidden;
+}
+.nav-links ul {
+  display: flex;
+  white-space: nowrap;
+}
+.nav-links ul li {
+  margin-right: 30px;
+}
+.nav-links a {
+  display: inline-block;
+  position: relative;
+}
+.nav-links ul li a {
+  font-size: 12px;
+  margin-right: 10px;
+  display: flex;
+  color: white;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+.acort-links {
+  display: grid;
+}
+.acort-menu {
+  transition: 5s ease;
+}
+.nav-links p:after {
+  bottom: -5px;
+  /* bottom: 0; */
+  content: "";
+  display: block;
+  border-radius: 10px;
+  height: 2px;
+  left: 0;
+  position: relative;
+  background: #fff;
+  transition: 0.2s ease 0s, left 0.2s ease 0s;
+  width: 0;
+  opacity: 0;
+}
+.nav-links a:hover p:after {
+  opacity: 1;
+  width: 100%;
+  left: 0;
+}
+/* .nav-links p:hover:after {
+  opacity: 1;
+  width: 100%;
+  left: 0;
+} */
+.acort-links {
+  font-size: 12px;
+  padding: 10px 15px;
+  border: 1px solid rgb(82, 82, 82);
+}
+.acort-links a {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.acort-menu:hover .acort-links {
+  position: fixed;
+  z-index: 1;
+  display: block;
+  background: #131313;
+}
+.acort-name {
+  margin-left: 10px;
+}
+
+/* Name Perfil */
+@media screen and (min-width: 300px) {
+  .name-tag {
+    display: none;
+  }
+  .hidden-p {
+    display: none;
+  }
+  .acort-links {
+    display: none;
+  }
+  .nav-links ul li {
+    margin-right: 0px;
+  }
+  .acort-menu {
+    display: initial;
+  }
+  .name-user {
+    display: none;
+  }
+  .img-user {
+    width: 35px !important;
+    height: 35px !important;
+  }
+}
+@media screen and (min-width: 1224px) {
+  .name-user {
+    display: inline;
+  }
+  .name-tag {
+    display: inline;
+  }
+  .hidden-p {
+    display: inline;
+  }
+  .nav-links ul li {
+    margin-right: 30px;
+  }
+  .acort-menu {
+    display: none;
+  }
+  .img-user {
+    width: 40px !important;
+    height: 40px !important;
+  }
+}
+/* ------------------------------------------------------------------------------------------------------------- */
+/* Profile */
+.profile {
+  position: fixed;
+  display: inline-flex;
+  right: 0;
+  margin: 0;
+  height: 0%;
+  transition: height 0.4s ease-in-out;
+  cursor: pointer;
+  z-index: 1;
+}
+.profile:hover {
+  display: inline-block;
+}
+.avatar {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+.profile-selected {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.profile-selected .avatar {
+  margin: 20px;
+}
+.profile:hover p {
+  display: inline;
+}
+.profile p {
+  color: white;
+}
+.profile:hover {
+  top: 0;
+  right: 0;
+  width: 200px;
+  border-right: 1px solid rgb(82, 82, 82);
+  border-left: 1px solid rgb(82, 82, 82);
+  border-bottom: 1px solid rgb(82, 82, 82);
+  background: #131313;
+  height: auto;
+  animation-name: viewprofiles;
+  animation-duration: 0.3s;
+}
+@keyframes viewprofiles {
+  0% {
+    top: -50px;
+    opacity: 0%;
+  }
+  50% {
+    opacity: 55%;
+  }
+  100% {
+    top: 0px;
+    opacity: 100%;
+  }
+}
+.profile:hover .profile-selected {
+  border-bottom: 1px solid rgb(82, 82, 82);
+}
+/* Profile Nav */
+.profile-nav {
+  display: none;
+  margin-right: 30px;
+}
+.profile:hover .profile-nav {
+  display: block;
+}
+.profile-nav-profiles p {
+  color: white;
+  margin-left: 5px;
+  font-size: 14px;
+}
+.header li {
+  list-style: none;
+}
+.profile-nav-profiles li {
+  display: flex;
+  align-items: center;
+}
+.profile-nav-profiles img {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.profile-nav-options li {
+  margin: 15px;
+}
+.plus-perfil {
+  margin-top: 15px;
+  margin-left: 15px;
+  padding: 12px;
+  border-radius: 50px;
+  background: rgb(82, 82, 82);
+}
+.plus-perfil svg {
+  display: block;
+  margin: auto;
+  justify-content: center;
+}
+.plus-perfil:hover {
+  background: rgb(102, 102, 102);
+}
